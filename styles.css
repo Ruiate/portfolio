@@ -1,0 +1,963 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color:#f8f9fa;
+    font-family: "Arial, Helvetica, sans-serif"; /* modern professional font */
+}
+
+#header {
+    background-color: #2575fc; /* professional blue */
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+h1, h2 {
+    color: #222; /* dark gray, readable on light backgrounds */
+    font-weight: 600; /* professional bold */
+}
+
+.section-box {
+  background-color:#f8f9fa;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 12px;                 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  max-width: 1000px;                   
+}
+
+.section-box:hover {
+  background-color: #ffffff;
+  transform: translateY(-8px) scale(1.02); 
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
+}
+
+
+
+/* Global Section Titles Styling */
+h1, h2 {
+  font-size: 28px;   /* uniform size */
+  font-weight: 700;  /* bold */
+  color: black;      /* black text */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#button {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+   
+}
+
+.intro-text {
+  font-size: 80px;   /* Huge size */
+  font-weight: 900;  /* Extra bold */
+  color: #000;
+  margin: 10px 0;
+}
+
+.intro-text .name {
+  color: #0073e6;   /* Blue highlight */
+  font-size: 60px;  /* Even bigger name */
+  font-weight: 700;
+}
+
+
+
+#button button {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 4px solid #6a11cb;
+    
+}
+
+#button button:hover {
+    background-color: #1a5bcc;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#Footer {
+    background-color: #222; /* dark gray for footer */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+/* Footer icons */
+#Footer a i:hover {
+    color: #2575fc; /* blue highlight on hover */
+    transform: scale(1.2);
+}
+
+#profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: #fff; /* light background so text is visible */
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Profile Image Styling - moderate size */
+#image {
+    width: 220px; /* increased size */
+    height: 220px; /* increased size */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2575fc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Name text beside photo */
+#profile-text h2 {
+    font-size: 40px; /* increase size as needed */
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: bold; /* optional, makes it stand out more */
+}
+
+/* Subtitle / description text */
+#profile-text p {
+    font-size: 22px;
+    color: #222; /* dark black */
+}
+
+#contact-info {
+    font-size: 16px;
+    color: #222; /* dark black */
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+/* Font Awesome / icon fonts */
+#Skills i {
+    font-size: 90px; /* very large size */
+    margin: 15px; /* space between icons */
+    color: inherit;
+}
+
+/* If you also have image icons */
+#Skills img {
+    width: 100px; /* very large width */
+    height: 100px; /* very large height */
+    margin: 15px;
+}
+
+/* Tools icons - same style as Technical Skills */
+#Tools i {
+    font-size: 90px; /* same as #Skills i */
+    margin: 15px; /* same spacing */
+    color: inherit; /* keeps original color */
+    transition: transform 0.3s ease-in-out; /* optional hover */
+}
+
+#Tools i:hover {
+    transform: scale(1.05); /* slight enlargement on hover */
+    cursor: pointer;
+}
+
+/* Tools section text (h2) same size as Soft Skills */
+#Tools h2 {
+    width: 100%;
+    text-align: center;  /* centers the title */
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+/* Center the Tools section */
+#Tools {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Circular boxes for icons */
+#Tools i {
+    font-size: 90px;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Tools icons - same as Technical Skills icons */
+#Tools i {
+    font-size: 90px;
+    color: whitesmoke;
+    background: radial-gradient(circle at top left, #6a11cb, #2575fc);
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+#Tools i:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Skills container (Technical & Soft side by side) */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+/* Each skills box */
+.skills-box {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: white;
+  text-align: center;
+}
+
+/* Technical grid (3 in first row, 2 in second row) */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  justify-items: center; /* center inside each grid cell */
+}
+
+
+
+.tech-grid .icon-box i {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.tech-grid .icon-box:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: #6a11cb;
+}
+
+.tech-grid .icon-box:hover i {
+  color: #6a11cb;
+}
+
+/* Soft skills list */
+.soft-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.soft-skills ul li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000 !important;  /* 🔥 Force black text */
+  opacity: 1 !important;   /* 🔥 Make sure it's fully visible */
+  margin: 8px 0;
+}
+
+
+
+.soft-list li {
+  margin: 8px 0;
+  font-size: 16px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+  transition: background 0.3s;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: black;
+}
+
+.soft-list li:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+
+.skills-row {
+    display: flex; /* horizontal row of technical icons */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.soft-skills ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+  list-style-type: disc;   /* adds bullet points */
+  padding-left: 20px;
+}
+
+.soft-skills {
+  background: #ffffff;   /* white background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;       /* makes it bigger */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+
+/* Individual technical icon box */
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Technical Skill Icons */
+.skill-box i {
+    font-size: 90px;
+    color: white;
+    background: radial-gradient(circle at top left, #6a11cb, #2575fc);
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.skill-box i:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    background: radial-gradient(circle at top left, whitesmoke, #8e2de2);
+    cursor: pointer;
+}
+
+/* Label under each icon */
+.skill-box p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #222;
+    text-align: center;
+}
+
+/* Soft Skills Styling */
+.soft-skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #222;
+}
+
+/* Soft Skills Section */
+.soft-skills {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Soft Skills Title */
+.soft-skills h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000 !important;   /* force black */
+  opacity: 1 !important;    /* force visible */
+}
+
+/* Soft Skills List */
+.soft-skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.soft-skills ul li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000 !important;   /* force black text */
+  opacity: 1 !important;    /* no transparency */
+  visibility: visible !important;  /* make sure it's not hidden */
+  margin: 8px 0;
+}
+
+/* Soft Skills Title */
+.soft-skills h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;   /* Black title */
+}
+
+.soft-skills ul li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000 !important;   /* Black text */
+  opacity: 1 !important;    /* Fully visible */
+  margin: 8px 0;
+}
+
+/* Soft Skills list aligned to left */
+#Skills ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 60px; /* slightly indented for bullets */
+    color: #222;
+    font-size: 18px; /* readable size */
+}
+
+/* Soft Skills List */
+.soft-skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Common styling for all sections */
+section {
+    background-color: #fff; /* white background for content */
+    padding: 30px 40px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    color: #222;
+    max-width: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Section headings */
+section h1, section h2 {
+    color: #222;
+    text-align: center; /* headings centered */
+    margin-bottom: 20px;
+}
+
+/* Paragraphs inside sections */
+section p, section li {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.skills-row i {
+    background: radial-gradient(circle at top left, #6a11cb, #2575fc);
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Hover effect */
+.skills-row i:hover {
+    transform: translateY(-8px) scale(1.02); /* lift and slight enlarge */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* stronger shadow */
+    background: radial-gradient(circle at top left, whitesmoke, gray); /* change background */
+    cursor: pointer;
+}
+
+ 
+
+html {
+    scroll-behavior: smooth;
+}
+
+section.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Education Section */
+#Education {
+    background-color: #ffffff;
+    color: #222;
+    padding: 30px 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    max-width: 900px; /* slightly larger width for better layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Heading */
+#Education h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* Container to hold all education cards */
+#Education .edu-container {
+    display: flex;
+    flex-wrap: wrap; /* wrap on small screens */
+    justify-content: center;
+    gap: 25px; /* space between cards */
+    width: 100%;
+}
+
+/* Individual Education Card */
+.edu-card {
+    background: #f4f4f9; /* light background for contrast */
+    color: #222;
+    width: 100%; /* full width by default */
+    max-width: 320px; /* cap max width */
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 16px;
+    line-height: 1.5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+/* Card Hover Effect */
+.edu-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: radial-gradient(circle at top left, whitesmoke, gray);
+    color: black;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* Education Card Headings */
+.edu-card h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Education Card Paragraphs */
+.edu-card p {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+/* Marks / Details inside card */
+.edu-card .edu-marks p {
+    font-size: 14px;
+    margin: 2px 0;
+    font-weight: 500;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 600px) {
+    #Education {
+        padding: 20px 15px;
+    }
+    .edu-card {
+        max-width: 90%; /* fit smaller screens */
+        padding: 15px 10px;
+    }
+    #Education h1 {
+        font-size: 28px;
+    }
+    .edu-card h2 {
+        font-size: 18px;
+    }
+    .edu-card p {
+        font-size: 14px;
+    }
+}
+
+/* Footer icons */
+#Footer i {
+    font-size: 40px; /* adjust icon size */
+    color: black; /* set icon color to black */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect - optional */
+#Footer i:hover {
+    transform: scale(1.2); /* pop effect on hover */
+    cursor: pointer;
+    color: #2575fc; /* optional: change color on hover */
+}
+
+/* Footer paragraph text */
+#Footer p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: black; /* set footer text to black */
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* BSE Section - Bigger than technical skill icons */
+#BSE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.bse-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bse-icon {
+    width: 180px; /* bigger than technical icons */
+    height: 180px;
+    background: #2575fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* circular */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bse-icon img {
+    width: 130px; /* image fits nicely inside bigger circle */
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%; /* circular image */
+}
+
+.bse-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background-color: #1a5bcc;
+}
+/* Uniform Section Titles */
+
+/* ===== Hover Effects ===== */
+.edu-card:hover,
+.skills-box:hover,
+.skill-box:hover,
+button:hover,
+.bse-icon img:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transform: translateY(-5px) scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth animation lives on the base state */
+.edu-card,
+.skills-box,
+.skill-box,
+#button button,
+.bse-icon,
+#Tools i {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+  will-change: transform, box-shadow, background-color, opacity; /* optional, helps smoothness */
+}
+
+/* Only the changed styles go in :hover */
+.edu-card:hover,
+.skills-box:hover,
+.skill-box:hover,
+#button button:hover,
+.bse-icon:hover,
+#Tools i:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+  background-color: #f8f9fa;
+}
+
+/* ===== Base (transition setup for smoothness) ===== */
+section,
+.edu-card,
+.skills-box,
+.skill-box,
+#button button,
+.bse-icon,
+#Tools i {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease, background-color 0.3s ease;
+  will-change: transform, box-shadow, background;
+}
+
+/* ===== Hover effects ===== */
+section:hover,
+.edu-card:hover,
+.skills-box:hover,
+.skill-box:hover,
+#button button:hover,
+.bse-icon:hover,
+#Tools i:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+  background: radial-gradient(circle at top left, whitesmoke, gray);
+  cursor: pointer;
+}
+
+
+/* Motivation Section */
+.motivation-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.motivation-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.quote-box {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.quote-box:hover {
+  transform: translateY(-5px) scale(1.05);
+  color: #0073e6; /* text changes color on hover */
+}
+
+.quote-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Whole Card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover Effect for Whole Card */
+.profile-card:hover {
+  transform: translateY(-10px) scale(1.02);  /* Floating effect */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.profile-card:hover .profile-pic {
+  transform: scale(1.08);
+  border-color: #ff9800; /* border changes color on hover */
+}
+
+/* Name */
+.name {
+  font-size: 42px;
+  font-weight: bold;
+  color: #007bff;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+.profile-card:hover .name {
+  transform: scale(1.05);
+  color: #0056b3;
+  text-shadow: 0 3px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Title */
+.title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+.profile-card:hover .title {
+  color: #ff9800;
+}
+
+/* Contact Info */
+.contact-info a {
+  display: inline-block;
+  margin: 8px 15px 0 0;
+  font-size: 18px;
+  color: #222;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-info a:hover {
+  color: #fff;
+  background-color: #e91e63;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
+
+.name {
+  font-weight: bold;
+  font-size: 48px; /* increase size if you want */
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.intro-text {
+  font-size: 36px;
+  font-weight: 600;
+  color: black; /* default black */
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+
+
+.name {
+  font-weight: bold;
+  font-size: 48px;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+.intro-text {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.intro-black {
+  color: black;
+  transition: text-shadow 0.4s ease;
+}
+
+.intro-black:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6),
+               0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-info {
+  color: black;
+  transition: text-shadow 0.4s ease;
+}
+
+.contact-info:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6),
+               0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.intro{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.intro {
+  color: black;
+  transition: text-shadow 0.4s ease;
+}
+
+.intro:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6),
+               0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.name {
+  background: linear-gradient(90deg, #ff6b6b, #f7b733, #6bc1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: text-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.name:hover {
+  text-shadow: 0 0 10px rgba(255, 107, 107, 0.8),
+               0 0 20px rgba(247, 183, 51, 0.7),
+               0 0 30px rgba(107, 193, 255, 0.7);
+  transform: scale(1.05); /* little zoom effect */
+}
+
+
+
+
+
+
+
+
+
+
+
